@@ -90,6 +90,7 @@ public class ProductsController {
     // .../products/{id}
     @DeleteMapping("{id}")
     @PreAuthorize("hasRole('ROLE_ADMIN')")
+
     public void deleteProduct(@PathVariable int id) {
         try
         {
