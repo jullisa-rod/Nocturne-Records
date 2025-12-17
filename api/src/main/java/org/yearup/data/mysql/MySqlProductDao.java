@@ -23,19 +23,19 @@ public class MySqlProductDao extends MySqlDaoBase implements ProductDao
     {
         List<Product> products = new ArrayList<>();
 
-        String sql = "SELECT * FROM products " +
-                "WHERE (category_id = ? OR ? = -1) " +
-                "   AND (price <= ? OR ? = -1) " +
-                "   AND (subcategory = ? OR ? = '') ";
+        String sql = """
+                SELECT * FROM products
+                WHERE (category_id = ? OR ? = -1)
+                   AND (price <= ? OR ? = -1)
+                   AND (subcategory = ? OR ? = '')""";
 
         categoryId = categoryId == null ? -1 : categoryId;
         minPrice = minPrice == null ? new BigDecimal("-1") : minPrice;
         maxPrice = maxPrice == null ? new BigDecimal("-1") : maxPrice;
         subCategory = subCategory == null ? "" : subCategory;
 
-        try (Connection connection = getConnection())
-        {
-            PreparedStatement statement = connection.prepareStatement(sql);
+        try (Connection connection = getConnection();
+             PreparedStatement statement = connection.prepareStatement(sql)) {
             statement.setInt(1, categoryId);
             statement.setInt(2, categoryId);
             statement.setBigDecimal(3, minPrice);
@@ -43,16 +43,14 @@ public class MySqlProductDao extends MySqlDaoBase implements ProductDao
             statement.setString(5, subCategory);
             statement.setString(6, subCategory);
 
-            ResultSet row = statement.executeQuery();
-
-            while (row.next())
-            {
-                Product product = mapRow(row);
-                products.add(product);
+            try (ResultSet row = statement.executeQuery()) {
+                while (row.next()) {
+                    Product product = mapRow(row);
+                    products.add(product);
+                }
             }
         }
-        catch (SQLException e)
-        {
+        catch (SQLException e) {
             throw new RuntimeException(e);
         }
 
