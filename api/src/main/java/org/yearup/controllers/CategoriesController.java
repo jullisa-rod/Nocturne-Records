@@ -56,7 +56,7 @@ public class CategoriesController
             return categoryDao.create(category);
         }
         catch (Exception ex) {
-            throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Internal Server Error: Failed to add Category");
+            throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Internal Server Error: Failed to add category");
         }
     }
 
@@ -69,7 +69,7 @@ public class CategoriesController
             categoryDao.update(id,category);
         }
         catch (Exception ex) {
-            throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "ERROR: Internal Server Error to update category.");
+            throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "ERROR: Internal Server Error: Failed to update category.");
         }
     }
 
@@ -91,7 +91,7 @@ public class CategoriesController
         }
         catch(Exception ex)
         {
-            throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Internal Server Error: Failed to Delete Category.");
+            throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Internal Server Error: Failed to delete category.");
         }
     }
 }
