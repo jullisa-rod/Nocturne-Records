@@ -18,8 +18,8 @@
   </style>
   
   <!-- "record" text -->
-  <text x="10" y="110" class="easy-text">record</text>
+  <text x="10" y="110" class="easy-text">Nocturne</text>
   
   <!-- "shop" text -->
-  <text x="28" y="160" class="shop-text">shop</text>
+  <text x="28" y="160" class="shop-text">Records</text>
 </svg>
