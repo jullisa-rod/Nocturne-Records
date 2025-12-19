@@ -4,8 +4,9 @@ Nocturne Records is a API created music store for vinyl lovers and audio gear co
 
 
 Security: JWT (JSON Web Tokens) for authenticated sessions and role-based access.
-### Bug Fixes
- Catalog Stabilization
+### Bug Fixes 𓆣
+Resolved issues where the record search returned incorrect results. Now, customers can filter by category, price range, and subcategories.
+Fixed a bug in the ProductController class, specifically the updateProduct method.
 
 
 ### API Reference
