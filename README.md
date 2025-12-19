@@ -18,7 +18,7 @@ Fixed a bug in the ProductController class, specifically the updateProduct metho
 | Method	|   Endpoint	|        Description          |	 Access Type|
 |:-------:|:-----------:|:---------------------------:|:-------:|
 |  GET	  |    /products	| Browse the vinyl collection	|  Public |
-|  PUT    |  /category | Add a category | Admin |
+|  PUT    |  /categories | Add a category | Admin |
 |  GET  	|  /categories	|    List all music genres  	|  Public |
 | DELETE  |/categories/id | Delete category          | Admin|
 
