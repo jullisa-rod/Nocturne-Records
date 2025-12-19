@@ -9,6 +9,8 @@ Security: JWT (JSON Web Tokens) for authenticated sessions and role-based access
 
 
 ### API Reference
-|Method	|Endpoint	|Description	Access
-|GET	|/products	|Browse the vinyl collection	|Public
-|GET	|/categories	|List all music genres	|Public
+|Method	|Endpoint	|Description	Access|
+______________________________________
+|GET	|/products	|Browse the vinyl collection	|Public|
+_______________________________________
+|GET	|/categories	|List all music genres	|Public|
