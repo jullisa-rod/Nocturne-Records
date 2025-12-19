@@ -15,11 +15,12 @@ Fixed a bug in the ProductController class, specifically the updateProduct metho
 
 
 ### API Reference ⋆˚☆˖°⋆｡° ✮˖ ࣪ ⊹⋆.˚
-| Method	|   Endpoint	|        Description          |	 Access |
+| Method	|   Endpoint	|        Description          |	 Access Type|
 |:-------:|:-----------:|:---------------------------:|:-------:|
-|  GET	  |  /products	| Browse the vinyl collection	|  Public |
-|  PUT    |/products/{id} | Update product details | Admin |
-|  GET  	| /categories	|    List all music genres  	|  Public |
+|  GET	  |    /products	| Browse the vinyl collection	|  Public |
+|  PUT    |  /category | Add a category | Admin |
+|  GET  	|  /categories	|    List all music genres  	|  Public |
+| DELETE  |/categories/id | Delete category          | Admin|
 
 ### Interesting piece of code ✮⋆˙
 |How it looks on front-end:|
