@@ -3,23 +3,23 @@
   <style>
     .easy-text {
       font-family: 'Helvetica Neue', Arial, sans-serif;
-      font-size: 120px;
+      font-size: 100px;
       font-weight: 700;
-      fill: #8B4513;
-      letter-spacing: -8px;
+      fill: #B18FFA;
+      letter-spacing: -4px;
     }
     .shop-text {
       font-family: 'Helvetica Neue', Arial, sans-serif;
       font-size: 40px;
       font-weight: 300;
-      fill: #A0522D;
+      fill: #B18FFA;
       letter-spacing: 12px;
     }
   </style>
   
-  <!-- "record" text -->
+  <!-- "Nocturne" text -->
   <text x="10" y="110" class="easy-text">Nocturne</text>
   
-  <!-- "shop" text -->
+  <!-- "Records" text -->
   <text x="28" y="160" class="shop-text">Records</text>
 </svg>
