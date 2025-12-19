@@ -22,6 +22,14 @@ Fixed a bug in the ProductController class, specifically the updateProduct metho
 |  GET  	| /categories	|    List all music genres  	|  Public |
 
 ### Interesting piece of code ✮⋆˙
+|How it looks on front-end:|
+|:----------------------:|
+<img width="352" height="500" alt="Screenshot 2025-12-19 at 9 23 52 AM" src="https://github.com/user-attachments/assets/e3b83c29-85b7-4d40-858a-84556beb6901" />
+
+| The code: |
+|:----------------------:|
+<img width="867" height="384" alt="Screenshot 2025-12-19 at 9 19 29 AM" src="https://github.com/user-attachments/assets/502b31f8-a6f9-4a0d-a02f-1ce60aee46bf" />
+
 
 
 
